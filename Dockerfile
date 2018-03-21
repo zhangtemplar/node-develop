@@ -8,10 +8,9 @@ ADD . /usr/src/app
 # Install dependencies
 WORKDIR /usr/src/app
 RUN npm install
-RUN npm install -g serve
 
 # Expose the app port
-EXPOSE 80
+EXPOSE 8000
 
 # Start the app
-CMD serve  -p 80 -s build
+CMD npm start
