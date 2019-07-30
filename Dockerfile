@@ -1,4 +1,4 @@
-FROM node
+FROM arm64v8/node
 MAINTAINER zhangtemplar
 
 # Prepare app directory
